@@ -2,7 +2,7 @@
 ## Lisa Anton et Paul Grienenberger
 
 ## I. Exploration locale en solo
-### 1. Affichqge d'informations sur la pile TCP/IP locale
+### 1. Affichage d'informations sur la pile TCP/IP locale
 
 Sur windows la commande opur afficher la paserelle par défaut est 
 ipconfig
@@ -55,4 +55,3 @@ puis
 ``` 
 nmap -sn 192.168.1.0/24
 ```
-
