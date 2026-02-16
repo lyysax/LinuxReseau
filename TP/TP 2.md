@@ -11,9 +11,7 @@ ipconfig /all
 Et pour Linux 
 ip route
  OU 
-ip r
- OU 
-ip route show
+ip a
 ### Interface wifi
 Nom: Wireless LAN adpater Wi-Fi
 Adresse MAC : A0-59-50-0F-22-97 <br>
@@ -55,3 +53,12 @@ puis
 ``` 
 nmap -sn 192.168.1.0/24
 ```
+### II. Exploration locale en duo
+#### 3. Création du réseau
+
+PC1 → 172.16.18.11/24
+
+PC2 → 172.16.18.12/24
+
+#### 4. Utilisation d'un des deux comme gateway
+
