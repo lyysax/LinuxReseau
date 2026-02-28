@@ -54,4 +54,4 @@ Questions:
 
 ## Partie 4
 ### 6. Règles de pare-feu
-Pour permettre aux machines du LAN d'accèder à Internet:
+Pour permettre aux machines du LAN d'accèder à Internet, dans Firewall puis Rules: 

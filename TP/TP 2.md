@@ -83,11 +83,11 @@ PC1 (serveur) : nc -l -p 8888 -s 192.168.137.1
 PC2 (client) : nc 192.168.137.1 8888
 
 
-## Pas eu le temps ↓
-6. Wireshark
+## Pas eu le temps (et pas de cable ethernet chez nous) ↓ 
+#### 6. Wireshark
 Lancer Wireshark sur l'interface Ethernet des deux PCs.
 
-7. Firewall
+#### 7. Firewall
 
 ### II. Manipulations d'autres outils/protocoles côté client
 #### 1. DHCP
