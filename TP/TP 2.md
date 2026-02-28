@@ -72,9 +72,13 @@ Masque : 255.255.255.0
 
 Passerelle : 172.16.18.11
 
-DNS : 8.8.8.8 (ou celui du réseau Ingésup)
+DNS : 8.8.8.8 
 
-Sur PC 2 (linux) :
+Sur PC 2 (linux), faire les commandes:
+```
+sudo ip addr add 172.16.18.12/24 dev eth0
+sudo ip link set eth0 up
+```
 
 
 #### 5. Petit chat privé
