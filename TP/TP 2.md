@@ -61,4 +61,35 @@ PC1 → 172.16.18.11/24
 PC2 → 172.16.18.12/24
 
 #### 4. Utilisation d'un des deux comme gateway
+Les configurations:
+
+Sur PC 1 (sous Windows) :
+Paramètres réseau → Modifier les options d'adaptateur → clic droit sur Ethernet → Propriétés → Protocole Internet version 4 → Utiliser l'adresse IP suivante :
+
+IP : 172.16.18.12
+
+Masque : 255.255.255.0
+
+Passerelle : 172.16.18.11
+
+DNS : 8.8.8.8 (ou celui du réseau Ingésup)
+
+Sur PC 2 (linux) :
+
+
+#### 5. Petit chat privé
+PC1 (serveur) : nc -l -p 8888 -s 192.168.137.1
+
+PC2 (client) : nc 192.168.137.1 8888
+
+
+## Pas eu le temps ↓
+6. Wireshark
+Lancer Wireshark sur l'interface Ethernet des deux PCs.
+
+7. Firewall
+
+### II. Manipulations d'autres outils/protocoles côté client
+#### 1. DHCP
+#### 2. DNS
 
