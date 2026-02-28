@@ -17,12 +17,15 @@ Questions:
 
 ### Création de l'infrastructure Easy-RSA
 Commencer par créer le dossier et initialiser la PKI
+
 ![Photo 33](../img/33.png)
 
 Puis on génère l'autorité de certification, le certificat du serveur, le certificat client.
+
 ![Photo 34](../img/34.png)
 
 Les paramètres Diffie-Hellman 
+
 ![Photo 35](../img/35.png)
 
 Une clé TLS supplémentaire
@@ -64,5 +67,20 @@ Questions:
 3. Pour résoudre le problème, on va regarder les logs. Voici l'erreur.
 ![Photo 42](../img/42.png)
 
+La configuration du serveur est bien réalisé, mais il manque les certificats.
 
-Il faut vérifier dans server.conf qu'on a configurer tout à l'heure,
+### Partie 3: Création du profil client
+Je crée le fichier client.ovpn et ajoute dedans le contenu de ```ca.crt``` ```client1.crt``` ```client1.key```.
+Je n'ai pas réussi à activer le copier coller entre ma vm et windows..
+
+Voici ce qu'il faut copier dans le nouveau fichier, pareil pour les autres fichiers que viens d'énoncer.
+![Photo 43](../img/43.png)
+
+Questions:
+1. Il faut ajouter les balises <ca>, <cert> et <key> et d'y insérer le contenu des fichiers entre ces balises.
+2. La clé privé permet d'authentifier le client auprès du serveur VPN et de déchiffrer les communications chiffrées. Si elle est découverte, on peux usurper l'identité du client.
+
+Questions:
+1. En consultant la table de routage avec ```ip route```.
+2. Si le port est bloqué, on peut changer le port du serveur, basculer de UDP vers TCP (ou l'inverse), ou utiliser des techniques de tunneling comme avec openvpn ou SSL.
+
